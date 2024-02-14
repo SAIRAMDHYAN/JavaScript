@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+<style>
+    
+.green{
+    color:green;
+}
+
+.red{
+    color:red
+}
+</style>
+
+
+</head>
+<body>
+
+<div id='div1'>
+    <!-- <h1>hello</h1> -->
+
+</div>
+<button id='button' onClick=getImg()>Click here</button>
+
+
+<h1><b>hello1</b></h1>
+<h1>hello2</h1>
+<h1>hello3</h1>
+<h1>hello4</h1>
+<h1>hello5</h1>
+
+
+<h2 class='green'>hi1</h2>
+<h2 class='red'>hi2</h2>
+<h2 class='green'>hi3</h2>
+<h2 class='red'>hi4</h2>
+<h2 class='green'>hi5</h2>
+
+<script>
+    
+let h1_tag=document.getElementsByTagName('h1')
+console.log(h1_tag)
+
+
+for(let index in h1_tag){
+
+if(index==2){
+
+    h1_tag[index].innerHTML='Change element'
+  }
+
+}
+
+let claSelect=document.getElementsByClassName('green')
+
+console.log(claSelect)
+
+let heading=document.querySelectorAll('h1')
+
+heading.forEach(el=>console.log(el.innerHTML))
+
+// console.log(heading.innerHTML)
+
+// function getImg(){
+//     document.getElementById("button").innerHTML= `<img width='500px' src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeydP73x0Bvoe27Z8-N4idn2sUsOwPxNFIPuPll6YR8kyEqEaw'/>`
+// }
+
+
+
+</script>
+
+
+
+
+    <!-- <script src="dom_feb13.js"></script> -->
+    
+</body>
+</html>
